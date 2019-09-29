@@ -1,13 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
         <Compile Include="CliCommand.fs" />
         <Compile Include="InterfaceManager.fs" />
         <Compile Include="CliFoundation.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="runtime.win-x86.Microsoft.NETCore.App" Version="2.2.7" />
     </ItemGroup>
 
 </Project>

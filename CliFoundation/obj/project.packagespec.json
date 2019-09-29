@@ -1,42 +1,42 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/CliFoundation.fsproj",
+    "projectUniqueName": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj",
     "projectName": "CliFoundation",
-    "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/CliFoundation.fsproj",
-    "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/obj/",
+    "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj",
+    "outputPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
-      "netcoreapp2.2"
+      "netcoreapp3.0"
     ],
-    "sources": {
-      "https://api.nuget.org/v3/index.json": {}
-    },
     "frameworks": {
-      "netcoreapp2.2": {
+      "netcoreapp3.0": {
         "projectReferences": {}
       }
     }
   },
   "frameworks": {
-    "netcoreapp2.2": {
+    "netcoreapp3.0": {
       "dependencies": {
         "FSharp.Core": {
           "target": "Package",
-          "version": "[4.6.2, )"
+          "version": "[4.7.0, )"
         },
-        "Microsoft.NETCore.App": {
-          "suppressParent": "All",
+        "runtime.win-x86.Microsoft.NETCore.App": {
           "target": "Package",
-          "version": "[2.2.0, )",
-          "autoReferenced": true
+          "version": "[2.2.7, )"
         }
       },
       "imports": [
-        "net461"
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
       ],
       "assetTargetFallback": true,
       "warn": true
