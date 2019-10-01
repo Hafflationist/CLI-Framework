@@ -1,7 +1,11 @@
 namespace CliFoundation
 
+type ResultOfCommand =
+    | Kill
+    | Recursion
+    | SimpleResponse of string
 
-type CliExecuter = Map<string, string> -> string
+type CliExecuter = Map<string, string> option -> ResultOfCommand
 
 type CliCommand = {
     name : string option;

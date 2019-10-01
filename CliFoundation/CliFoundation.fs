@@ -1,12 +1,15 @@
 module CliFoundation.CLIFoundation
 open CliFoundation
+open System
 
 [<EntryPoint>]
 let main args =
-    CliCommand.create
-    |> CliCommand.setName "hugobert"
-    |> CliCommand.addArgumentName "-nörgeln"
-    |> CliCommand.addArgumentName "-rassismus"
-    |> CliCommand.setExecuter (fun m -> "ignoring command!")
-    |> ignore
+    let inputText = Console.ReadLine()
+    let inputParts = inputText.Split [|' '|]
+                     |> Array.toList
+    match inputParts with
+    | command :: args :: body -> printfn "command with args"
+    | command :: args -> printfn "command without args"
+    | [] -> printfn "nothing"
+    
     0

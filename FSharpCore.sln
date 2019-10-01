@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CliFoundation", "CliFoundation\CliFoundation.fsproj", "{C3CAA9AB-32A1-43C2-A565-3B4DC7F7D3D9}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.fsproj", "{F6B00914-E802-4F4E-AF14-6A5915D3640D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{C3CAA9AB-32A1-43C2-A565-3B4DC7F7D3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3CAA9AB-32A1-43C2-A565-3B4DC7F7D3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3CAA9AB-32A1-43C2-A565-3B4DC7F7D3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B00914-E802-4F4E-AF14-6A5915D3640D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B00914-E802-4F4E-AF14-6A5915D3640D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B00914-E802-4F4E-AF14-6A5915D3640D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B00914-E802-4F4E-AF14-6A5915D3640D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
