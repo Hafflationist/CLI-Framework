@@ -10,8 +10,4 @@
         <Compile Include="CliFoundation.fs" />
     </ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="runtime.win-x86.Microsoft.NETCore.App" Version="2.2.7" />
-    </ItemGroup>
-
 </Project>

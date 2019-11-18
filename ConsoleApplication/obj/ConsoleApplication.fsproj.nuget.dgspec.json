@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj": {}
+  },
+  "projects": {
+    "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
+        "projectName": "ConsoleApplication",
+        "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
+        "packagesPath": "/home/mrobohm/.nuget/packages/",
+        "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/mrobohm/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

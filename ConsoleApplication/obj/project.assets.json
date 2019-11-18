@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/CliFoundation.fsproj",
-      "projectName": "CliFoundation",
-      "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/CliFoundation.fsproj",
+      "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
+      "projectName": "ConsoleApplication",
+      "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
       "packagesPath": "/home/mrobohm/.nuget/packages/",
-      "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/obj/",
+      "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
