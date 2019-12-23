@@ -1,20 +1,17 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
+    "projectUniqueName": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\ConsoleApplication.fsproj",
     "projectName": "ConsoleApplication",
-    "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
-    "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/obj/",
+    "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\ConsoleApplication.fsproj",
+    "outputPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp3.0"
     ],
-    "sources": {
-      "https://api.nuget.org/v3/index.json": {}
-    },
     "frameworks": {
       "netcoreapp3.0": {
         "projectReferences": {}

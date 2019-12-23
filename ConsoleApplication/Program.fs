@@ -6,8 +6,7 @@ let main argv =
     Some 88
     |> Option.filter (fun value -> value = 0 ) 
     |> Option.defaultValue 44
-    |> Console.WriteLine
-    
+    |> Console.WriteLine    
     
     Console.ForegroundColor <- ConsoleColor.DarkYellow
     Console.WriteLine "Hugobert in dunkelgelb"

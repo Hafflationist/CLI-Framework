@@ -1,20 +1,17 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/CliFoundation.fsproj",
+    "projectUniqueName": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj",
     "projectName": "CliFoundation",
-    "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/CliFoundation.fsproj",
-    "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/CliFoundation/obj/",
+    "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj",
+    "outputPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp3.0"
     ],
-    "sources": {
-      "https://api.nuget.org/v3/index.json": {}
-    },
     "frameworks": {
       "netcoreapp3.0": {
         "projectReferences": {}

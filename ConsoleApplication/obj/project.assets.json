@@ -107,28 +107,30 @@
     ]
   },
   "packageFolders": {
-    "/home/mrobohm/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Hekto\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
+      "projectUniqueName": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\ConsoleApplication.fsproj",
       "projectName": "ConsoleApplication",
-      "projectPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/ConsoleApplication.fsproj",
-      "packagesPath": "/home/mrobohm/.nuget/packages/",
-      "outputPath": "/home/mrobohm/RiderProjects/FSharpCore/ConsoleApplication/obj/",
+      "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\ConsoleApplication.fsproj",
+      "packagesPath": "C:\\Users\\Hekto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/mrobohm/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Hekto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
