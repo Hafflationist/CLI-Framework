@@ -2,46 +2,61 @@ module CliFoundation.InterfaceManager
 
 open System
 
-let executeCommand failAction (cliCommands: CliCommand list) commandName args =
-    
+let getElementsWithIndexEven = List.indexed
+                              >> List.filter (fst >> ((%) 2) >> (=) 0)    //|> List.filter (fun pair -> (fst pair) % 2 = 0)
+                              >> List.map snd
+let getElementsWithIndexOdd = List.indexed
+                              >> List.filter (fst >> ((%) 2) >> (=) 1)    //|> List.filter (fun pair -> (fst pair) % 2 = 1)
+                              >> List.map snd
+
+let executeCommand failAction (cliCommands : CliCommand list) commandName args =
+
     let compareOptWithString optStr str =
-        optStr |> Option.map(fun optStrStr -> optStrStr = str)
+        optStr |> Option.map (fun optStrStr -> optStrStr = str)
                |> Option.defaultValue false
-               
+
     let checkCliCommand = function
         | CliCommandSimple simpleCommand -> simpleCommand.name = commandName
         | CliCommandWithCountedArguments countedCommand ->
             List.length args = countedCommand.numberOfArguments
             && countedCommand.name = commandName
-        | CliCommandWithNamedArguments namedCommand -> false        // TODO Implement check
-                       
-    
+        | CliCommandWithNamedArguments namedCommand ->
+            let names = args |> getElementsWithIndexEven
+            namedCommand.arguments |> List.forall (fun argumentName -> List.contains argumentName names)
+            && (List.length args) % 2 = 0
+
     let extractExecuter = function
         | CliCommandSimple simpleCommand -> simpleCommand.executer
         | CliCommandWithCountedArguments countedCommand -> countedCommand.executer
-        | CliCommandWithNamedArguments namedCommand -> (fun (a: string list) -> SimpleResponse "to be implemented!")        // TODO Implement check
-               
+        | CliCommandWithNamedArguments namedCommand ->
+            (fun (namesAndArguments : string list) ->
+                let names = getElementsWithIndexEven namesAndArguments
+                let arguments = getElementsWithIndexOdd namesAndArguments
+                List.map2 (fun a b -> (a, b)) names arguments
+                |> Map.ofList
+                |> namedCommand.executer)
+
     cliCommands
     |> List.tryFind checkCliCommand
     |> Option.map extractExecuter
-    |> Option.map (fun (executer: CliExecuter) -> executer args)
+    |> Option.map (fun (executer : CliExecuter) -> executer args)
     |> Option.defaultWith failAction
-    
-let executeCommandWithoutArgs failAction (cliCommands: CliCommand list) commandName =
+
+let executeCommandWithoutArgs failAction (cliCommands : CliCommand list) commandName =
     executeCommand failAction cliCommands commandName List.empty
-    
-let executeCommandWithArgs failAction (cliCommands: CliCommand list) commandName args =
+
+let executeCommandWithArgs failAction (cliCommands : CliCommand list) commandName args =
     executeCommand failAction cliCommands commandName args
-    
-    
-    
-let rec manageCommands initAction failAction (cliCommands: CliCommand list) =
-    
-    let singleExecuter =  executeCommandWithoutArgs failAction cliCommands
-    
+
+
+
+let rec manageCommands initAction failAction (cliCommands : CliCommand list) =
+
+    let singleExecuter = executeCommandWithoutArgs failAction cliCommands
+
     initAction()
     let inputText = Console.ReadLine()
-    let inputParts = inputText.Split [|' '|]
+    let inputParts = inputText.Split [| ' ' |]
                      |> Array.toList
     let result = match inputParts with
                  | command :: args :: body ->
