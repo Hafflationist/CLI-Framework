@@ -9,4 +9,8 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CliFoundation\CliFoundation.fsproj" />
+  </ItemGroup>
+
 </Project>

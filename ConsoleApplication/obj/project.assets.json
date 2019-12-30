@@ -51,6 +51,19 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "CliFoundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/CliFoundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CliFoundation.dll": {}
+        }
       }
     }
   },
@@ -99,10 +112,16 @@
         "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "CliFoundation/1.0.0": {
+      "type": "project",
+      "path": "../CliFoundation/CliFoundation.fsproj",
+      "msbuildProject": "../CliFoundation/CliFoundation.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "CliFoundation >= 1.0.0",
       "FSharp.Core >= 4.7.0"
     ]
   },
@@ -135,7 +154,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj": {
+              "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj"
+            }
+          }
         }
       }
     },

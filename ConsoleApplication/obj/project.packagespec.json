@@ -14,7 +14,11 @@
     ],
     "frameworks": {
       "netcoreapp3.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj": {
+            "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj"
+          }
+        }
       }
     }
   },

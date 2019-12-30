@@ -2,14 +2,14 @@ module CliFoundation.InterfaceManager
 
 open System
 
-let getElementsWithIndexEven = List.indexed
-                              >> List.filter (fst >> ((%) 2) >> (=) 0)    //|> List.filter (fun pair -> (fst pair) % 2 = 0)
-                              >> List.map snd
-let getElementsWithIndexOdd = List.indexed
-                              >> List.filter (fst >> ((%) 2) >> (=) 1)    //|> List.filter (fun pair -> (fst pair) % 2 = 1)
-                              >> List.map snd
+let private getElementsWithIndexEven = List.indexed
+                                       >> List.filter (fst >> ((%) 2) >> (=) 0)    //|> List.filter (fun pair -> (fst pair) % 2 = 0)
+                                       >> List.map snd
+let private getElementsWithIndexOdd = List.indexed
+                                      >> List.filter (fst >> ((%) 2) >> (=) 1)    //|> List.filter (fun pair -> (fst pair) % 2 = 1)
+                                      >> List.map snd
 
-let executeCommand failAction (cliCommands : CliCommand list) commandName args =
+let private executeCommand failAction (cliCommands : CliCommand list) commandName args =
 
     let compareOptWithString optStr str =
         optStr |> Option.map (fun optStrStr -> optStrStr = str)
@@ -42,10 +42,10 @@ let executeCommand failAction (cliCommands : CliCommand list) commandName args =
     |> Option.map (fun (executer : CliExecuter) -> executer args)
     |> Option.defaultWith failAction
 
-let executeCommandWithoutArgs failAction (cliCommands : CliCommand list) commandName =
+let private executeCommandWithoutArgs failAction (cliCommands : CliCommand list) commandName =
     executeCommand failAction cliCommands commandName List.empty
 
-let executeCommandWithArgs failAction (cliCommands : CliCommand list) commandName args =
+let private executeCommandWithArgs failAction (cliCommands : CliCommand list) commandName args =
     executeCommand failAction cliCommands commandName args
 
 
@@ -59,10 +59,7 @@ let rec manageCommands initAction failAction (cliCommands : CliCommand list) =
     let inputParts = inputText.Split [| ' ' |]
                      |> Array.toList
     let result = match inputParts with
-                 | command :: args :: body ->
-                     printfn "command with args"
-                     Recursion
-                 | command :: args -> singleExecuter command
+                 | command :: args -> executeCommand failAction cliCommands command args
                  | _ ->
                      printfn ""
                      Recursion
