@@ -6,8 +6,8 @@
 
     <ItemGroup>
         <Compile Include="CliCommand.fs" />
+        <Compile Include="CommandExecuter.fs" />
         <Compile Include="InterfaceManager.fs" />
-        <Compile Include="CliFoundation.fs" />
     </ItemGroup>
 
 </Project>
