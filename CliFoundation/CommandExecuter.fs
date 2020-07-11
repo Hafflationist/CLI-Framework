@@ -9,9 +9,9 @@ let private getElementsWithIndexOdd = List.indexed
 
 let internal executeCommand failAction (cliCommands : CliCommand list) commandName args =
 
-    let compareOptWithString optStr str =
-        optStr |> Option.map (fun optStrStr -> optStrStr = str)
-               |> Option.defaultValue false
+    let compareOptWithString str =
+        Option.map (fun optStrStr -> optStrStr = str)
+        >> Option.defaultValue false
 
     let checkCliCommand = function
         | CliCommandSimple simpleCommand -> simpleCommand.name = commandName
