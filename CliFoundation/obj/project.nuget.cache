@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DuakfVGlnc/zJHxA3bZHwm7R/vGo1UwxlGWY53RoiEc234hAziG496xro6KgHKdlXkpmwW1fYqinUwqzUiLdAA==",
+  "success": true,
+  "projectFilePath": "/home/mrobohm/RiderProjects/CLI-Framework/CliFoundation/CliFoundation.fsproj",
+  "expectedPackageFiles": [
+    "/home/mrobohm/.nuget/packages/fsharp.core/4.7.0/fsharp.core.4.7.0.nupkg.sha512",
+    "/home/mrobohm/.nuget/packages/microsoft.netcore.app.ref/3.0.0/microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "/home/mrobohm/.nuget/packages/microsoft.aspnetcore.app.ref/3.0.1/microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

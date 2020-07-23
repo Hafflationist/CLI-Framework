@@ -69,7 +69,7 @@
   },
   "libraries": {
     "FSharp.Core/4.7.0": {
-      "sha512": "eaK6/hWZv+x5uE91adXJyTI5+IykXyp1/USWScqB0NSJLu2qp+3VSESzwwMrfdlt9ZvLifm8jTTp5dK6IYWEaA==",
+      "sha512": "6Bf2qzSCaJoP6tTfO+a5muUS7QbyJANqSut73zQvwQ9It5P0ITz9VKseeia2ofco30c55EQ0jA2wf2+A2gpGnw==",
       "type": "package",
       "path": "fsharp.core/4.7.0",
       "files": [
@@ -126,37 +126,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hekto\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/mrobohm/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\ConsoleApplication.fsproj",
+      "projectUniqueName": "/home/mrobohm/RiderProjects/CLI-Framework/ConsoleApplication/ConsoleApplication.fsproj",
       "projectName": "ConsoleApplication",
-      "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\ConsoleApplication.fsproj",
-      "packagesPath": "C:\\Users\\Hekto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\ConsoleApplication\\obj\\",
+      "projectPath": "/home/mrobohm/RiderProjects/CLI-Framework/ConsoleApplication/ConsoleApplication.fsproj",
+      "packagesPath": "/home/mrobohm/.nuget/packages/",
+      "outputPath": "/home/mrobohm/RiderProjects/CLI-Framework/ConsoleApplication/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Hekto\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/mrobohm/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj": {
-              "projectPath": "C:\\Users\\Hekto\\RiderProjects\\CLI-Framework\\CliFoundation\\CliFoundation.fsproj"
+            "/home/mrobohm/RiderProjects/CLI-Framework/CliFoundation/CliFoundation.fsproj": {
+              "projectPath": "/home/mrobohm/RiderProjects/CLI-Framework/CliFoundation/CliFoundation.fsproj"
             }
           }
         }
@@ -179,7 +173,27 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.103/RuntimeIdentifierGraph.json"
       }
     }
   }
